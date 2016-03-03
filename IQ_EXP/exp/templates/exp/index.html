@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'exp/style.css'  %}"/>
+
+<body>
+
+{% if set_list %}
+
+	<ul>
+	{% for set in set_list  %}
+		<li> <a href="/exp/set_{{set.id}}/"> {{ set.set_text  }} </a></li>
+	{% endfor  %}
+	</ul>
+
+{% else %}	
+	<p> No sets are available. </p>
+{% endif %}	
+
+</body>
+</html>
