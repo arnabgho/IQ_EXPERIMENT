@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'exp/style.css'  %}"/>
+
+
+<head> <h1>Set 1</h1> </head>
+
+<body>
+
+	{% if error %}
+		<h2> Please Fill Up The Responses Correctly</h2>
+	{% endif %}	
+	<div value="Instructions">
+	<ul>
+	<li> Please Fill Up Your Name,Age,Class </li>
+	<li> You have got 30 minutes to answer the questions </li>
+	<li> Answer the questions to the best of your knowledge and at the end of it you will be given a goodie as a token of appreciation </li>
+	
+	</ul>
+	</div>
+
+	<div value="Crux_Experiment">
+		<form action="{% url 'exp:result' 5 %}" method="post" >
+		{% csrf_token %}
+			Name:<br>
+			<input type="text" name="name"> <br>
+			Age:<br>
+			<input type="text" name="age"> <br>
+			Class:<br>
+			<input type="number" name="class_id"> <br>
+
+			<br> <br> <br> <br>
+
+
+			<h3> Question 1  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin53_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin53_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin53_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin53_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin53_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin53" value="0"  /> 
+			<label>
+		   	<img src="{% static 'exp/Answers/admin53_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin53" value="1"  /> 
+			<label>
+			<img src="{% static 'exp/Answers/admin53_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin53" value="2"  /> 
+			<label>
+		   	<img src="{% static 'exp/Answers/admin53_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin53" value="3"  /> 
+			<label>
+		   	<img src="{% static 'exp/Answers/admin53_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin53" value="4"  /> 
+			<label>
+		   	<img src="{% static 'exp/Answers/admin53_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+			
+				<br> <br> <br> <br>
+
+
+			<h3> Question 2  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin55_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin55_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin55_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin55_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin55_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin55" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin55_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin55" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin55_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin55" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin55_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin55" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin55_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin55" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin55_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+		
+			<br> <br> <br> <br>
+
+
+			<h3> Question 3  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin56_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin56_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin56_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin56_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin56_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin56" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin56_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin56" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin56_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin56" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin56_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin56" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin56_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin56" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin56_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+			<br> <br> <br> <br>
+
+
+			<h3> Question 4  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin57_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin57_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin57_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin57_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin57_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin57" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin57_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin57" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin57_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin57" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin57_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin57" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin57_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin57" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin57_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+
+			<br> <br>
+			<br> <br> <br> <br>
+
+
+			<h3> Question 5  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin58_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin58_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin58_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin58_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin58_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin58" value="0"  /> 
+			<label for="test1">
+			<img src="{% static 'exp/Answers/admin58_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin58" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin58_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin58" value="2"  /> 
+			<label for="test1">
+			<img src="{% static 'exp/Answers/admin58_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin58" value="3"  /> 
+			<label for="test1">
+			<img src="{% static 'exp/Answers/admin58_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin58" value="4"  /> 
+			<label for="test1">
+			<img src="{% static 'exp/Answers/admin58_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+				<br> <br> <br> <br>
+
+
+			<h3> Question 6  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin59_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin59_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin59_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin59_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin59_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin59" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin59_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin59" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin59_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin59" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin59_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin59" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin59_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin59" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin59_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+				<br> <br> <br> <br>
+
+
+			<h3> Question 7  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin60_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin60_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin60_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin60_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin60_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin60" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin60_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin60" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin60_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin60" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin60_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin60" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin60_7_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin60" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin60_9_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+				<br> <br> <br> <br>
+
+
+			<h3> Question 8  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin61_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin61_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin61_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin61_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin61_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin61" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin61_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin61" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin61_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin61" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin61_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin61" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin61_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin61" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin61_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+
+			<br> <br> <br> <br>
+
+
+			<h3> Question 9  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin62_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin62_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin62_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin62_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin62_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin62" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin62_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin62" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin62_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin62" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin62_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin62" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin62_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin62" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin62_11_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+
+				<br> <br> <br> <br>
+
+
+			<h3> Question 10  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin63_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin63_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin63_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin63_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin63_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin63" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin63_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin63" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin63_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin63" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin63_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin63" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin63_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin63" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin63_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+	
+				<br> <br> <br> <br>
+
+
+			<h3> Question 11  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin64_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin64_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin64_big_2_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin64_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin64_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin64" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin64_2_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin64" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin64_3_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin64" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin64_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin64" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin64_6_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin64" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin64_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+
+			<br> <br> <br> <br>
+
+
+
+			<h3> Question 12  </h3>
+
+			<fieldset>
+			{% load staticfiles %}
+			<img src="{% static 'exp/Questions/admin65_big_0_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin65_big_1_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin65_big_2_cropped.png' %}" height="50" width="50" border="2">
+			<img src="{% static 'exp/Questions/admin65_big_3_cropped.png' %}" height="50" width="50" border="2"> 
+			<img src="{% static 'exp/Questions/admin65_big_4_cropped.png' %}" height="50" width="50" border="2"> 
+			</fieldset>
+			
+			<fieldset>
+			{% load staticfiles %}
+			<input type="radio" name="admin65" value="0"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin65_1_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+			<input type="radio" name="admin65" value="1"  /> 
+			<label for="test2">
+			<img src="{% static 'exp/Answers/admin65_5_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+
+			<input type="radio" name="admin65" value="2"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin65_7_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+			
+
+			<input type="radio" name="admin65" value="3"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin65_8_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			<input type="radio" name="admin65" value="4"  /> 
+			<label for="test1">
+		   	<img src="{% static 'exp/Answers/admin65_10_cropped.png' %}" height="50" width="50" border="2"> 
+			</label>
+	
+			</fieldset>
+
+			<br> <br> <br>
+			<input type="submit" value="Submit">
+		<form/>
+	</div>
+
+</body>
+</html>

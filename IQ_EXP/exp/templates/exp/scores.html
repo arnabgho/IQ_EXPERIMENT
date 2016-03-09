@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'exp/style.css'  %}"/>
+
+<body>
+
+{% if score %}
+	<h1>Wow Your Score Is : {{score}} </h1> 
+	<h2>Thanks For Participating . We Really Appreciate it .</h2>
+{% else %}	
+	<p> No scores are available. </p>
+{% endif %}	
+
+</body>
+</html>
