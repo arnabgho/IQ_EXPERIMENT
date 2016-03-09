@@ -1,0 +1,4 @@
+IQ_EXP/exp/*.pyc
+IQ_EXP/exp/utils/*.pyc
+IQ_EXP/exp/migrations/*.pyc
+IQ_EXP/IQ_EXP/*.pyc
