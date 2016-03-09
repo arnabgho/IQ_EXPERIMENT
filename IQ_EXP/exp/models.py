@@ -30,3 +30,10 @@ class Sets(models.Model):
 
 	def __unicode__(self):
 		return self.set_text
+
+class Correct_Answers(models.Model):
+	question=models.CharField(max_length=100)
+	answer=models.IntegerField()
+
+	def __unicode__(self):
+		return self.question
